@@ -3,8 +3,9 @@ class GoalsController < ApplicationController
   before_action :set_goal, only: [:show, :edit, :update, :destroy]
 
   # GET /goals
-  def index
-    @goals = current_user.goals.all
+
+def index
+   @goals = current_user.goals
   end
 
   # GET /goals/new
